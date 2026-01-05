@@ -21,17 +21,32 @@
 title: Julie Charlet
 email: juliecharlet@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi, i'm Julie ! I'm a computational engineer currently working on data-driven weather models. 
+  Hi, i'm Julie ! I'm a Switzerland-based computational engineer currently working on data-driven weather models. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  chjulie
 
 # Build settings
-theme: minima
+theme: minima  # minima
+# minimal_mistakes_skin: "contrast" # air
+teaser: assets/images/0003_0A.png 
 plugins:
   - jekyll-feed
 
+
+# Define custom front matter
+defaults:
+  - 
+    scope:
+      path: ''  # projects/
+      type: posts
+    values:
+      layout: post
+      # values
+
+
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
