@@ -1,11 +1,89 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+
+/**
+* Fonts
+*/
+@font-face {
+    font-family: 'Syne';
+    src: url('/assets/fonts/Syne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/assets/fonts/PlusJakartaSans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/assets/fonts/DMSans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: light;
+    font-display: swap;
+}
+
+/**
+* Site colors
+*/
+$primary-color: #1da1f2;
+$secondary-color: #26262c;
+$hover-color: #4b4c52;
+$nav-font: 'Roboto', sans-serif;
+$heading-font: 'Roboto', sans-serif;
+$secondary-font: 'DM Sans';
+
 /**
 * Page
 */
 .page-content {
     padding-top: 0;
+}
+
+/**
+ * Nav items
+ */
+.nav-items .nav-item {
+    font-family: $secondary-font;
+    /* replace with your font */
+    font-weight: 500;
+    /* optional */
+    font-size: 1rem;
+    /* optional */
+    color: $secondary-color;
+    /* default text color */
+    text-decoration: none;
+    /* remove underline */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* smooth hover */
+}
+
+.nav-items .nav-item:hover {
+    color: $hover-color;
+    /* hover colour */
+    transform: scale(1.05);
+    /* optional subtle scale effect */
+}
+
+/**
+ * Site title
+ **/
+.site-header .site-title {
+    font-family: $secondary-font;
+    color: $secondary-color;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.site-header .site-title:hover {
+    color: $hover-color;
+    transform: scale(1.05);
 }
 
 /**
@@ -16,6 +94,7 @@
     /* use 50% for a circle */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 /**
@@ -48,7 +127,7 @@
 }
 
 .site-footer .social-media-list a:hover {
-    color: #003049;
+    color: $hover-color;
 }
 
 .site-footer .social-media-list .grey {
