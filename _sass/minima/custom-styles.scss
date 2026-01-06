@@ -1,2 +1,36 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+/**
+* Page
+*/
+.page-content {
+    padding-top: 0;
+}
+
+/**
+ * About
+ */
+.profile-photo {
+    border-radius: 50%;
+    /* use 50% for a circle */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+
+/**
+* Post
+*/
+.post-hero {
+    aspect-ratio: 16 / 4;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: 0;
+}
+
+.post-hero+.post-header {
+    margin-top: clamp(1.5rem, 1vw, 3rem);
+}
