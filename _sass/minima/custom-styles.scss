@@ -34,3 +34,23 @@
 .post-hero+.post-header {
     margin-top: clamp(1.5rem, 1vw, 3rem);
 }
+
+/**
+* Footer
+*/
+.site-footer .social-media-list a {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    color: #666;
+    transition: color 0.2s ease-in-out;
+}
+
+.site-footer .social-media-list a:hover {
+    color: #003049;
+}
+
+.site-footer .social-media-list .grey {
+    color: inherit;
+}
