@@ -39,6 +39,11 @@ $nav-font: 'Roboto', sans-serif;
 $heading-font: 'Roboto', sans-serif;
 $secondary-font: 'DM Sans';
 
+.reversefootnote {
+    display: none;
+}
+
+
 /**
 * Page
 */
@@ -100,6 +105,12 @@ $secondary-font: 'DM Sans';
 /**
 * Post
 */
+.post {
+    text-align: justify;
+    text-justify: inter-word;
+    /* optional, improves spacing between words */
+}
+
 .post-hero {
     aspect-ratio: 16 / 4;
     height: auto;
@@ -115,8 +126,38 @@ $secondary-font: 'DM Sans';
 }
 
 /**
-* Footer
+* Socials
 */
+.site-footer .social-media-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer .social-item {
+    display: flex;
+    align-items: center;
+    /* vertically centers icon with text */
+    margin-bottom: 0.5em;
+    /* space between rows */
+}
+
+.site-footer .social-name {
+    flex: 0 0 120px;
+    /* fixed width for alignment of icons */
+    text-align: right;
+    /* optional: right-align text next to icon */
+    margin-right: 0.5em;
+    /* space between name and icon */
+}
+
+.site-footer .social-links {
+    display: flex;
+    flex-direction: column;
+    /* stack all items vertically */
+    justify-content: flex-start;
+}
+
 .site-footer .social-media-list a {
     background: none;
     box-shadow: none;
@@ -124,6 +165,7 @@ $secondary-font: 'DM Sans';
     padding: 0;
     color: #666;
     transition: color 0.2s ease-in-out;
+    display: inline-block;
 }
 
 .site-footer .social-media-list a:hover {

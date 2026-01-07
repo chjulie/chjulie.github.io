@@ -1,14 +1,12 @@
+{% if site.social_links %}
 <ul class="social-media-list">
-
-  {% if site.social_links %}
-  <ul class="social-media-list">
-    {% for entry in site.social_links %}
-    <li>
-      <a rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title }}">
-        <span class="fa-brands fa-{{ entry.icon }} fa-lg"></span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+  {% for entry in site.social_links %}
+  <li class="social-item">
+    <span class="social-name">{{ entry.title }}</span>
+    <a rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title }}">
+      <span class="fa-brands fa-{{ entry.icon }} fa-lg"></span>
+    </a>
+  </li>
+  {% endfor %}
 </ul>
+{% endif %}
