@@ -241,54 +241,12 @@
 }
 
 /**
- * Home
- */
-.home-hero {
-  width: 100vw;
-  min-height: 100vh;
-
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-
-  background-image: url("/assets/images/0003_0A.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 2rem;
-}
-
-// .home-hero::before {
-//   content: "";
-//   position: absolute;
-//   inset: 0;
-//   background: rgba(0, 0, 0, 0.35);
-// }
-
-.home-hero>* {
-  position: relative;
-}
-
-.home-content-box {
-  background: rgba(255, 255, 255, 0.5);
-  max-width: 900px;
-  width: 100%;
-  padding: 1rem;
-
-  border-radius: 2px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-}
-
-/**
  * Posts
  */
 .post-header {
   margin-bottom: $spacing-unit;
   padding-bottom: 18px;
+  padding-top: 18px;
   text-align: center;
   border-bottom: 1px solid $border-color-01;
 }

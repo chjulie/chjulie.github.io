@@ -175,3 +175,94 @@ $secondary-font: 'DM Sans';
 .site-footer .social-media-list .grey {
     color: inherit;
 }
+
+/**
+ * Home
+ */
+.home-hero {
+    width: 100vw;
+    min-height: 100vh;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    background-image: url("/assets/images/home-phelix_creek.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+// .home-hero::before {
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   background: rgba(0, 0, 0, 0.35);
+// }
+
+.home-hero>* {
+    position: relative;
+}
+
+.home-content-box {
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 900px;
+    width: 80%;
+    padding: 1rem;
+
+    border-radius: 2px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/**
+* CV
+*/
+.cv-section {
+    margin-bottom: 1.5rem;
+}
+
+.cv-entry {
+    margin-bottom: 1rem;
+}
+
+.cv-header,
+.cv-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cv-section h2 {
+    margin-bottom: 0.4rem;
+    color: #444;
+}
+
+.cv-right {
+    white-space: nowrap;
+    font-size: 0.80rem;
+    font-weight: 400;
+}
+
+.cv-subheader {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.cv-small {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+.cv-tight {
+    margin: 0.1rem 0;
+}
+
+.cv-section .cv-tight strong {
+    font-size: 0.92em;
+}

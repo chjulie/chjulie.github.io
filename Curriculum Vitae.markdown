@@ -3,85 +3,188 @@ title: Curriculum Vitae
 permalink: /cv/
 layout: base
 ---
-<div>
-  <h2>
-    About me
-  </h2>
-  <div class="smallText">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis, justo sed feugiat pulvinar., quam ipsum tincidunt enim, ac gravida est metus sit amet neque. Curabitur ut arcu ut nunc finibus accumsan id id elit. 
-    </p>
-    <p>
-      Vivamus non magna quis neque viverra finibus quis a tortor. 
+
+<section class="cv-section">
+  <h2>Education</h2>
+
+  <div class="cv-entry">
+    <div class="cv-header">
+      <strong>EPFL, MSc degree</strong>
+      <span class="cv-right">2023–2026</span>
+    </div>
+    <div class="cv-subheader">
+      <em>Computational Sciences and Engineering</em>
+      <span class="cv-right">Lausanne, Vancouver</span>
+    </div>
+    <p class="cv-small">
+      Specialization in Data Science, Computational Modelling based on Differential Equations, and High-Performance Systems. MSc thesis at the Weather Forecast Research Team, University of British Columbia.
     </p>
   </div>
-</div>
 
-## Education
+  <div class="cv-entry">
+    <div class="cv-header">
+      <strong>EPFL, BSc degree</strong>
+      <span class="cv-right">2020–2023</span>
+    </div>
+    <div class="cv-subheader">
+      <em>Environmental Sciences and Engineering</em>
+      <span class="cv-right">Lausanne, Zürich</span>
+    </div>
+    <p class="cv-small">
+      Exchange year at ETH Zürich.
+    </p>
+  </div>
+</section>
 
-<div style="text-align:left;">
-<b>EPFL, MSc degree</b>
-<span style="float:right;">2023-2026</span>
-</div>
-<p style="text-align:left;">
-Computational Sciences and Engineering
-<span style="float:right;font-style:italic">Lausanne, Vancouver</span>
-</p>
-<div class="smallText">Specialization in Data Science, Computational Modelling based on Differential Equations, and High-Performance Systems. MSc thesis at the Weather Forecast Research Team, University of British Columbia.</div>
 
-<div style="text-align:left;">
-<b>EPFL, BSc degree</b>
-<span style="float:right;">2023-2026</span>
-</div>
-<p style="text-align:left;">
-Environmental Sciences and Engineering
-<span style="float:right;font-style:italic">Lausanne, Zürich</span>
-</p>
-<div class="smallText">Exchange year at ETH Zürich.</div>
+<section class="cv-section">
+  <h2>Projects</h2>
 
-## Projects
+  <div class="cv-entry">
+    <div class="cv-header">
+      <strong>Graph Neural Networks for Data-Driven Weather Forecasting</strong>
+      <span class="cv-right">2025–2026</span>
+    </div>
+    <div class="cv-subheader">
+      <em>Weather Forecast Research Team, University of British Columbia</em>
+    </div>
+    <ul class="cv-small">
+      <li>Fine-tuning and evaluation of a regional data-driven limited-area model for British Columbia.</li>
+      <li>Implementation using the open-source <em>Anemoi</em> library.</li>
+      <li>Development of an evaluation pipeline based on surface observations and reanalysis data.</li>
+    </ul>
+  </div>
 
-<div style="text-align:left;">
-<b>Graph Neural Networks for data-driven Weather Forecasting</b>
-<span style="float:right;">2025-2026</span>
-</div>
-<p style="text-align:left;">
-Weather Forecast Research Team, University of British Columbia
-</p>
-<div class="smallText">
-    <li>
-        Fine-tuning and evaluation of a regional data-driven limited-area model for British Columbia.
-    </li>
-    <li>
-        Implementation of the Graph Neural Network is done using the open-source \textit{Anemoi} library. 
-    </li>
-    <li>
-        Development of an evaluation pipeline based on surface observations.
-    </li>
-</div>
+  <div class="cv-entry">
+    <div class="cv-header">
+      <strong>Time Series Tokenization Methods for Multi-Modal Species Distribution Modelling</strong>
+      <span class="cv-right">2024</span>
+    </div>
+    <div class="cv-subheader">
+      <em>Environmental Computational Science and Earth Observation Laboratory, EPFL</em>
+    </div>
+    <ul class="cv-small">
+      <li>Implementation of 4 deep learning models (MLP, FCN, ResNet, Transformer Encoder).</li>
+      <li>Quantification of performance improvement from time series inputs and model comparison.</li>
+    </ul>
+  </div>
+</section>
 
-<div style="text-align:left;">
-<b>Time Series Tokenization Methods for Multi-Modal Species Distribution Modelling</b>
-<span style="float:right;">2024</span>
-</div>
-<p style="text-align:left;">
-Environmental Computational Science and Earth Observation Laboratory, EPFL
-</p>
-<div class="smallText">
-    <li>
-        Implementation of 4 deep learning models (Multilayer Perceptron, Fully Convolutional Network, Residual Network, Transformer Encoder) for time series tokenization
-    </li>
-    <li>
-        Quantification of performance improvement by adding different time series as input features
-    </li>
-</div>
 
-## Skills
+<section class="cv-section">
+  <h2>Skills</h2>
 
-**Programming Languages** : Python (Including proficient use of Pytorch, Scipy, Pandas, Scikit-learn), Matlab, C/C++
+  <p class="cv-tight">
+    <strong>Programming Languages</strong>
+    <span class="cv-small">Python (PyTorch, SciPy, Pandas, Scikit-learn), Matlab, C/C++</span>
+  </p>
 
-**Numerical Methods** : Finite Differences, Finite Elements
+  <p class="cv-tight">
+    <strong>Numerical Methods</strong>
+    <span class="cv-small">Finite Differences, Finite Elements</span>
+  </p>
 
-**Data Analysis** : Advanced Statistics, Monte-Carlo Simulations, Machine Learning and Deep Neural Networks
+  <p class="cv-tight">
+    <strong>Data Analysis</strong>
+    <span class="cv-small">Advanced Statistics, Monte-Carlo Simulations, Machine Learning, Deep Neural Networks</span>
+  </p>
+</section>
 
-### Work Experience
+
+<section class="cv-section">
+  <h2>Work Experience</h2>
+
+  <div class="cv-entry">
+    <div class="cv-header">
+      <strong>Alpiq</strong>
+      <span class="cv-right">2025</span>
+    </div>
+    <div class="cv-subheader">
+      <em>Data Analysis Intern</em>
+      <span class="cv-right">Lausanne</span>
+    </div>
+    <ul class="cv-small">
+      <li>Development of a data analysis and visualization pipeline for high-frequency hydraulic Pelton turbine vibration data.</li>
+      <li>Implementation of turbine health monitoring metrics.</li>
+      <li>Creation of a Python library for automated analysis and visualization.</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-header">
+      <strong>EPFL</strong>
+      <span class="cv-right">2022–2024</span>
+    </div>
+    <div class="cv-subheader">
+      <em>Teaching Assistant</em>
+      <span class="cv-right">Lausanne</span>
+    </div>
+    <p class="cv-small">
+      Probability and Statistics, Estimation Methods, Informatique, Calcul et Communication (Python).
+    </p>
+  </div>
+</section>
+
+
+<section class="cv-section">
+  <h2>Volunteering</h2>
+
+  <div class="cv-entry">
+    <div class="cv-header">
+      <strong>Forum EPFL</strong>
+      <span class="cv-right">2024</span>
+    </div>
+    <div class="cv-subheader">
+      <em>Communication Manager</em>
+      <span class="cv-right">Lausanne</span>
+    </div>
+    <p class="cv-small">
+      Community management and content creation for Instagram and LinkedIn.
+    </p>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-header">
+      <strong>Gymnastics Club FSG Morges</strong>
+      <span class="cv-right">2024</span>
+    </div>
+    <div class="cv-subheader">
+      <em>Junior Group Head Coach</em>
+      <span class="cv-right">Lausanne</span>
+    </div>
+    <p class="cv-small">
+      Management of 10 coaches and 50 gymnasts (6–15), training planning and event organisation.
+    </p>
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2>Languages</h2>
+
+  <p class="cv-tight">
+    <strong>French:</strong> <span class="cv-small">Mother tongue</span>
+  </p>
+  <p class="cv-tight">
+    <strong>English:</strong> <span class="cv-small">Cambridge English Proficiency Certificate (C2)</span>
+  </p>
+  <p class="cv-tight">
+    <strong>German:</strong> <span class="cv-small">Intermediate (B2)</span>
+  </p>
+</section>
+
+
+<section class="cv-section">
+  <h2>Interests</h2>
+
+  <p class="cv-tight">
+    <strong>Outdoor activities</strong>
+    <span class="cv-small">Road cycling, running, skiing, ski touring. Avalanche Safety Training certification (AST1-PLUS, 2025)</span>
+  </p>
+
+  <p class="cv-tight">
+    <strong>Gymnastics</strong>
+    <span class="cv-small">Individual and group competition at national level, regular coaching. J+S certification (2023)</span>
+  </p>
+</section>
+
+
