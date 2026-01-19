@@ -18,11 +18,4 @@ layout: base
     I had the chance to work on several fascinating projects during my master, as well as conducting a enriching internship. All can be found in the 'projects' section. Please reach out if you want to discuss any of those subjects.
 </p>
 
-## Resume
-### Education
 
-### Projects
-
-### Skills
-
-### Work Experience
