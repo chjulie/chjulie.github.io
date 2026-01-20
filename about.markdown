@@ -4,7 +4,7 @@ permalink: /about/
 layout: base
 ---
 <div align='center'>
-    <img src="/assets/images/about-faceshot.jpg" width="200" class="profile-photo"/>
+    <img src="/assets/images/about-midi.JPG" width="200" class="profile-photo"/>
 </div>
 <p>
    Hi, I'm Julie - a MSc student in Computational Sciences and Engineering at the École Polytechnique Fédérale de Lausanne. I am passionate about the applications of data analysis and deep learning to challenges related to the environment and to the energy industry. Outside of academia, I love going on adventures, either on foot, skis or on a bicycle. 

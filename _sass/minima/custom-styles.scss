@@ -222,12 +222,26 @@ $secondary-font: 'DM Sans';
 /**
 * CV
 */
+.cv-header-top h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.cv-header-top .cv-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
 .cv-section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.3rem;
+    max-width: 750px;
 }
 
 .cv-entry {
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .cv-header,
@@ -240,17 +254,26 @@ $secondary-font: 'DM Sans';
 .cv-section h2 {
     margin-bottom: 0.4rem;
     color: #444;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cv-header strong {
+    font-weight: 600;
 }
 
 .cv-right {
     white-space: nowrap;
     font-size: 0.80rem;
     font-weight: 400;
+    color: #777;
 }
 
 .cv-subheader {
     font-size: 0.8rem;
     color: #555;
+    font-style: italic;
 }
 
 .cv-small {
@@ -259,10 +282,40 @@ $secondary-font: 'DM Sans';
     margin-top: 0.3rem;
 }
 
+.cv-small li {
+    margin-bottom: 0.25rem;
+}
+
+.cv-small ul {
+    list-style-type: "– ";
+    padding-left: 1rem;
+}
+
 .cv-tight {
     margin: 0.1rem 0;
 }
 
 .cv-section .cv-tight strong {
     font-size: 0.92em;
+}
+
+.cv-link,
+.cv-link:visited,
+.cv-link:hover,
+.cv-link:active {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.cv-link {
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+    /* needed for transform */
+}
+
+.cv-link:hover {
+    color: #444;
+    /* subtle darkening */
+    transform: scale(1.01);
+    /* very gentle */
 }

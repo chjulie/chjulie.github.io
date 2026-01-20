@@ -3,6 +3,9 @@ title: Curriculum Vitae
 permalink: /cv/
 layout: base
 ---
+<div align='center'>
+    <img src="/assets/images/about-faceshot.jpg" width="200" class="profile-photo"/>
+</div>
 
 <section class="cv-section">
   <h2>Education</h2>
@@ -13,7 +16,7 @@ layout: base
       <span class="cv-right">2023–2026</span>
     </div>
     <div class="cv-subheader">
-      <em>Computational Sciences and Engineering</em>
+      <em><a href="https://www.epfl.ch/education/master/fr/programmes/science-et-ingenierie-computationnelles/" class="cv-link">Computational Sciences and Engineering</a></em>
       <span class="cv-right">Lausanne, Vancouver</span>
     </div>
     <p class="cv-small">
@@ -27,7 +30,7 @@ layout: base
       <span class="cv-right">2020–2023</span>
     </div>
     <div class="cv-subheader">
-      <em>Environmental Sciences and Engineering</em>
+      <em><a href="https://www.epfl.ch/schools/enac/education/environmental-sciences-and-engineering/fr/sie-bienvenue/" class="cv-link">Environmental Sciences and Engineering</a></em>
       <span class="cv-right">Lausanne, Zürich</span>
     </div>
     <p class="cv-small">
@@ -46,7 +49,7 @@ layout: base
       <span class="cv-right">2025–2026</span>
     </div>
     <div class="cv-subheader">
-      <em>Weather Forecast Research Team, University of British Columbia</em>
+      <em><a href="https://wfrt.eoas.ubc.ca/" class="cv-link">Weather Forecast Research Team, University of British Columbia</a></em>
     </div>
     <ul class="cv-small">
       <li>Fine-tuning and evaluation of a regional data-driven limited-area model for British Columbia.</li>
@@ -61,7 +64,7 @@ layout: base
       <span class="cv-right">2024</span>
     </div>
     <div class="cv-subheader">
-      <em>Environmental Computational Science and Earth Observation Laboratory, EPFL</em>
+      <em><a href="https://www.epfl.ch/labs/eceo/fr/home-fr/" class="cv-link">Environmental Computational Science and Earth Observation Laboratory, EPFL</a></em>
     </div>
     <ul class="cv-small">
       <li>Implementation of 4 deep learning models (MLP, FCN, ResNet, Transformer Encoder).</li>
