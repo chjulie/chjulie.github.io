@@ -57,7 +57,7 @@ $secondary-font: 'Avenir Next';
 
 
 .site-header {
-    background: $background-color;
+    background: transparent;
     /* optional for readability */
     margin: 0;
     margin-top: 0;
@@ -172,14 +172,49 @@ body {
 }
 
 /**
-* Post
+* Post List
 */
-.post {
-    text-align: justify;
-    text-justify: inter-word;
-    /* optional, improves spacing between words */
+/* Project list items */
+ul.post-list li {
+    margin-bottom: 1.5rem;
+    /* space between projects */
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    /* subtle separation */
 }
 
+/* Post date / meta */
+ul.post-list li .post-meta {
+    font-size: 0.875rem;
+    /* slightly smaller than title */
+    color: #888888;
+    /* muted grey */
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* Project title link */
+ul.post-list li h3 a.post-link {
+    font-size: 1.8rem;
+    /* enlarge title text */
+    font-weight: 600;
+    color: $text-color;
+    /* primary color */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+ul.post-list li h3 a.post-link:hover {
+    color: $hover-color;
+    /* hover colour */
+    transform: scale(1.01);
+    /* subtle slide on hover */
+}
+
+/**
+* Post
+*/
 .post-hero {
     aspect-ratio: 16 / 4;
     height: auto;
@@ -206,7 +241,7 @@ body {
 * Socials
 */
 .site-footer {
-    background-color: $background-color;
+    // background-color: $background-color;
     margin: 0;
     margin-top: 0;
     border-bottom: none;
@@ -215,32 +250,38 @@ body {
 
 .site-footer .social-media-list {
     list-style: none;
-    display: flex;
-    gap: 16px;
-    /* modern & clean spacing */
-    list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    /* space between social items */
 }
 
 .site-footer .social-item {
     display: flex;
+    /* row direction by default */
     align-items: center;
-    /* vertically centers icon with text */
-    margin-bottom: 0.5em;
-    /* space between rows */
+    /* vertical align icon + text */
+    gap: 0.5rem;
+    /* space between icon and text */
+    position: relative;
     color: $text-color;
 }
 
+.site-footer .social-item a {
+    display: inline-block;
+    z-index: 2;
+    color: $text-color;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
 .site-footer .social-name {
-    font-family: $default-font;
-    flex: 0 0 120px;
-    /* fixed width for alignment of icons */
-    text-align: right;
-    /* optional: right-align text next to icon */
-    margin-right: 0.5em;
-    /* space between name and icon */
+    display: inline-block;
+    z-index: 1;
     color: $text-color;
 }
+
 
 .site-footer .social-links {
     display: flex;
@@ -249,14 +290,27 @@ body {
     justify-content: flex-start;
 }
 
+.site-footer .social-media-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+
 .site-footer .social-media-list a {
+    align-items: center;
+    text-decoration: none;
     background: $background-color;
     box-shadow: none;
     border: none;
-    padding: 0;
+    padding: 0.25rem;
+    margin: 0;
+    gap: 2rem;
     color: $text-color;
     transition: color 0.2s ease-in-out;
-    display: inline-block;
+    display: flex;
 }
 
 .site-footer .social-media-list a:hover {
@@ -647,6 +701,83 @@ body {
     transform: scale(1.01);
     /* very gentle */
 }
+
+/**
+* Contact
+*/
+// .contact-container {
+//     max-width: 600px;
+//     margin: 2rem auto;
+//     padding: 1rem;
+//     text-align: left;
+// }
+
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    /* align top of image and text */
+    gap: 2rem;
+    max-width: 100vw;
+    margin: 4rem 0 2rem 0;
+    position: relative;
+    /* needed for absolute title */
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+}
+
+.contact-title {
+    position: absolute;
+    top: 12%;
+    /* ~50% overlap with image */
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.85;
+    pointer-events: none;
+    z-index: 1;
+    text-align: right;
+    max-width: 600px;
+    line-height: 3.2rem;
+}
+
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 8em;
+    margin-left: 10em;
+}
+
+.contact-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-label {
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: $text-color;
+    /* optional label color */
+}
+
+.contact-link {
+    color: rgba($text-color, 0.7);
+    /* link color */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-link:hover {
+    color: $hover-color;
+    /* hover highlight */
+    transform: scale(1.01);
+    ;
+}
+
 
 /**
 * Footnotes
