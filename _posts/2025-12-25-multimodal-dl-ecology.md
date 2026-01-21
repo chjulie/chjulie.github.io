@@ -10,7 +10,7 @@ In the context of multi-modal deep learning, this project assessed the improveme
 
 
 <figure id="fig-structure" style="text-align: center; max-width: 90%; margin: 2em auto;">
-  <img src="/assets/images/2025-12-20-model_structure_final.svg" alt="Overall method structure">
+  <img src="/assets/images/2025-12-20-model_structure_final.svg" alt="Overall method structure" style="display: block; margin: 0 auto; max-width: 100%;">
   <figcaption style="margin-top: 0.5em; font-size: 0.9em;">
     <strong>Figure 1.</strong> Overall method structure.
   </figcaption>
@@ -31,7 +31,7 @@ Secondly, to assess the contribution of each time series to the model’s perfor
 
 [Figure 2](#fig-occurence) visualizes the differences in model predictions for a specific species under three scenarios: (a) using only tabular data, (b) using tabular data and satellite time series, and (c) using tabular data and climatic time series. Panel (d) provides a comparison with the actual distribution of the species.
 
-<figure id="fig-occurence" style="text-align: center; max-width: 70%; margin: 2em auto;">
+<figure id="fig-occurence" style="text-align: center; max-width: min(800px,70%); margin: 2em auto;">
   <img src="/assets/images/2025-12-20-occurence.png" alt="Occurence prediction maps">
   <figcaption style="margin-top: 0.5em; font-size: 0.9em;">
     <strong>Figure 2.</strong> Occurence prediction for specie n° 9028 based on (a) tabular features, (b) tabular

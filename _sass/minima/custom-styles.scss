@@ -35,8 +35,9 @@
 $text-color: #1A1F16;
 $background-color: #F3F7F5;
 $primary-color: #C2D6CC;
-$secondary-color: #7F7F76;
+$secondary-color: #003252;
 $hover-color: #4b4c52;
+$secondary-hover: #001929;
 $default-font: 'Avenir Next';
 // $nav-font: 'Roboto', sans-serif;
 // $heading-font: 'Roboto', sans-serif;
@@ -206,9 +207,9 @@ ul.post-list li h3 a.post-link {
 
 /* Hover effect */
 ul.post-list li h3 a.post-link:hover {
-    color: $hover-color;
+    color: $secondary-color;
     /* hover colour */
-    transform: scale(1.01);
+    transform: scale(1.003);
     /* subtle slide on hover */
 }
 
@@ -240,6 +241,7 @@ ul.post-list li h3 a.post-link:hover {
 /**
 * Socials
 */
+
 .site-footer {
     // background-color: $background-color;
     margin: 0;
@@ -248,9 +250,26 @@ ul.post-list li h3 a.post-link:hover {
     border-top: none;
 }
 
+.site-footer .wrapper {
+    margin: 0 auto;
+}
+
+.footer-col-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer-col description-social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
 .site-footer .social-media-list {
     list-style: none;
-    padding: 0;
+    padding: 10%;
     margin: 0;
     display: flex;
     gap: 1rem;
@@ -262,6 +281,7 @@ ul.post-list li h3 a.post-link:hover {
     /* row direction by default */
     align-items: center;
     /* vertical align icon + text */
+    // padding-right: 10%;
     gap: 0.5rem;
     /* space between icon and text */
     position: relative;
@@ -287,7 +307,8 @@ ul.post-list li h3 a.post-link:hover {
     display: flex;
     flex-direction: column;
     /* stack all items vertically */
-    justify-content: flex-start;
+    align-items: right;
+    // justify-content: flex-end;
 }
 
 .site-footer .social-media-list {
@@ -296,6 +317,8 @@ ul.post-list li h3 a.post-link:hover {
     margin: 0;
     display: flex;
     gap: 1rem;
+    align-items: flex-end;
+    justify-content: end;
 }
 
 
@@ -320,6 +343,8 @@ ul.post-list li h3 a.post-link:hover {
 .site-footer .social-media-list .grey {
     color: inherit;
 }
+
+
 
 /**
  * Home
@@ -361,13 +386,12 @@ ul.post-list li h3 a.post-link:hover {
 }
 
 .home-hero {
+    width: 100%;
     position: relative;
-    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
     min-height: 100vh;
-
     margin-top: 0;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
 
     background-image: url("/assets/images/home-phelix_creek.png");
     background-size: cover;
@@ -377,13 +401,12 @@ ul.post-list li h3 a.post-link:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 2rem;
 }
 
 .home-hero::before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -393,8 +416,11 @@ ul.post-list li h3 a.post-link:hover {
 }
 
 .home-content-box {
+    margin: 0 auto;
     position: relative;
     z-index: 2;
+    left: 0;
+    transform: translateX(-50%);
 }
 
 .home-hero>* {
@@ -428,17 +454,25 @@ ul.post-list li h3 a.post-link:hover {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     /* optional: increase the global wrapper if needed */
 }
 
-/* Ensure images touch the edges of the container */
+.about-image,
+.cv-image {
+    padding-left: 5%;
+    padding-right: 1.5rem;
+}
+
 .about-image img.profile-photo,
 .cv-image img.profile-photo {
     width: 320px;
     /* slightly wider if desired */
     max-width: 100%;
-    margin-top: 2.5vw;
+    margin: 2.5vw;
 }
 
 /**
@@ -765,18 +799,26 @@ ul.post-list li h3 a.post-link:hover {
     /* optional label color */
 }
 
-.contact-link {
-    color: rgba($text-color, 0.7);
+.contact-link,
+.contact-link:visited {
+    color: $secondary-color;
     /* link color */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-link:hover {
-    color: $hover-color;
+    color: $secondary-hover;
     /* hover highlight */
-    transform: scale(1.01);
+    transform: scale(1.05);
     ;
+}
+
+.contact-link,
+.contact-link:visited,
+.contact-link:hover,
+.contact-link:active {
+    text-decoration: none;
 }
 
 

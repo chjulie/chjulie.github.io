@@ -19,7 +19,7 @@ layout: base
     </p>
 
     <p>   
-      I had the chance to work on several fascinating projects during my master, as well as conducting a enriching internship. Please reach out if you want to discuss any of those subjects.
+      I had the chance to work on several fascinating projects during my master, as well as conducting an enriching internship. Please reach out if you want to discuss any of those subjects.
     </p>
   </div>
 </div>
