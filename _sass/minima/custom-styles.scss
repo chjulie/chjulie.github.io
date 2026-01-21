@@ -240,12 +240,22 @@ ul.post-list li h3 a.post-link:hover {
 /**
 * Socials
 */
+
 .site-footer {
     // background-color: $background-color;
     margin: 0;
     margin-top: 0;
     border-bottom: none;
     border-top: none;
+}
+
+.site-footer .wrapper {
+    margin: 0 auto;
+}
+
+.footer-col-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .site-footer .social-media-list {
@@ -361,13 +371,12 @@ ul.post-list li h3 a.post-link:hover {
 }
 
 .home-hero {
+    width: 100%;
     position: relative;
-    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
     min-height: 100vh;
-
     margin-top: 0;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
 
     background-image: url("/assets/images/home-phelix_creek.png");
     background-size: cover;
@@ -377,13 +386,12 @@ ul.post-list li h3 a.post-link:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 2rem;
 }
 
 .home-hero::before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -393,8 +401,11 @@ ul.post-list li h3 a.post-link:hover {
 }
 
 .home-content-box {
+    margin: 0 auto;
     position: relative;
     z-index: 2;
+    left: 0;
+    transform: translateX(-50%);
 }
 
 .home-hero>* {
@@ -428,7 +439,10 @@ ul.post-list li h3 a.post-link:hover {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     /* optional: increase the global wrapper if needed */
 }
 
