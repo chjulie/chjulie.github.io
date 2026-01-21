@@ -16,14 +16,10 @@ layout: base
       <span class="contact-label">Email:</span>
       <a href="mailto:julie.charlet@epfl.ch" class="contact-link">julie.charlet@epfl.ch</a>
     </li>
-
-    <!-- LinkedIn -->
     <li>
       <span class="contact-label">LinkedIn:</span>
       <a href="https://www.linkedin.com/in/juliecharlet/" target="_blank" class="contact-link">linkedin.com/in/juliecharlet</a>
     </li>
-
-    <!-- GitHub -->
     <li>
       <span class="contact-label">GitHub:</span>
       <a href="https://github.com/chjulie" target="_blank" class="contact-link">github.com/chjulie</a>
