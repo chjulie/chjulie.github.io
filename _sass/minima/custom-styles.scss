@@ -482,11 +482,12 @@ ul.post-list li h3 a.post-link:hover {
 
 .about-text {
     flex: 1;
-    margin-top: 12rem;
+    margin-top: 16rem;
     column-count: 2;
     column-gap: 2rem;
     max-width: 60%;
     font-size: 0.9rem;
+    text-align: justify;
 }
 
 /* ----- Responsive Styles ----- */

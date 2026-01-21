@@ -11,7 +11,7 @@ layout: base
 
   <!-- Image -->
   <div class="cv-image">
-    <img src="/assets/images/about-faceshot.jpg" class="profile-photo"/>
+    <img src="/assets/images/CV-img.jpg" class="profile-photo"/>
   </div>
 
   <!-- CV text content -->
