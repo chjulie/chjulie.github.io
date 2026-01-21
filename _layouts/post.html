@@ -19,6 +19,7 @@ layout: base
       </time>
       {%- if page.modified_date -%}
       <span class="bullet-divider">•</span>
+      <!-- <div class="header-divider"></div> -->
       <span class="meta-label">Updated:</span>
       {%- assign mdate = page.modified_date | date_to_xmlschema %}
       <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">

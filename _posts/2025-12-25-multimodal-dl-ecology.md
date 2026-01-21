@@ -10,7 +10,7 @@ In the context of multi-modal deep learning, this project assessed the improveme
 
 
 <figure id="fig-structure" style="text-align: center; max-width: 90%; margin: 2em auto;">
-  <img src="/assets/images/2025-12-20-model_structure_final.png" alt="Overall method structure">
+  <img src="/assets/images/2025-12-20-model_structure_final.svg" alt="Overall method structure">
   <figcaption style="margin-top: 0.5em; font-size: 0.9em;">
     <strong>Figure 1.</strong> Overall method structure.
   </figcaption>

@@ -32,12 +32,15 @@
 /**
 * Site colors
 */
-$primary-color: #1da1f2;
-$secondary-color: #26262c;
+$text-color: #1A1F16;
+$background-color: #F3F7F5;
+$primary-color: #C2D6CC;
+$secondary-color: #7F7F76;
 $hover-color: #4b4c52;
-$nav-font: 'Roboto', sans-serif;
-$heading-font: 'Roboto', sans-serif;
-$secondary-font: 'DM Sans';
+$default-font: 'Avenir Next';
+// $nav-font: 'Roboto', sans-serif;
+// $heading-font: 'Roboto', sans-serif;
+$secondary-font: 'Avenir Next';
 
 .reversefootnote {
     display: none;
@@ -49,11 +52,12 @@ $secondary-font: 'DM Sans';
 */
 .page-content {
     padding-top: 0;
+    background-color: $background-color;
 }
 
 
 .site-header {
-    background: rgba(255, 255, 255, 0.5);
+    background: $background-color;
     /* optional for readability */
     margin: 0;
     margin-top: 0;
@@ -70,7 +74,7 @@ $secondary-font: 'DM Sans';
     width: 90vw;
     max-width: 90vw;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $text-color;
     margin: 0.5rem auto 0 auto;
     /* auto margins center it */
 }
@@ -107,8 +111,9 @@ body {
 
 .site-title {
     text-align: left;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: $text-color;
 }
 
 .site-nav {
@@ -122,10 +127,9 @@ body {
     // font-family: $secondary-font;
     /* replace with your font */
     font-weight: 500;
+    font-size: 1.2rem;
     /* optional */
-    font-size: 1rem;
-    /* optional */
-    color: $secondary-color;
+    color: $text-color;
     /* default text color */
     text-decoration: none;
     /* remove underline */
@@ -145,7 +149,7 @@ body {
  **/
 .site-header .site-title {
     // font-family: $secondary-font;
-    color: $secondary-color;
+    color: $text-color;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -190,9 +194,25 @@ body {
     margin-top: clamp(1.5rem, 1vw, 3rem);
 }
 
+.post .post-header {
+    color: $text-color;
+}
+
+.post .post-content {
+    color: $text-color;
+}
+
 /**
 * Socials
 */
+.site-footer {
+    background-color: $background-color;
+    margin: 0;
+    margin-top: 0;
+    border-bottom: none;
+    border-top: none;
+}
+
 .site-footer .social-media-list {
     list-style: none;
     display: flex;
@@ -208,15 +228,18 @@ body {
     /* vertically centers icon with text */
     margin-bottom: 0.5em;
     /* space between rows */
+    color: $text-color;
 }
 
 .site-footer .social-name {
+    font-family: $default-font;
     flex: 0 0 120px;
     /* fixed width for alignment of icons */
     text-align: right;
     /* optional: right-align text next to icon */
     margin-right: 0.5em;
     /* space between name and icon */
+    color: $text-color;
 }
 
 .site-footer .social-links {
@@ -227,11 +250,11 @@ body {
 }
 
 .site-footer .social-media-list a {
-    background: none;
+    background: $background-color;
     box-shadow: none;
     border: none;
     padding: 0;
-    color: #666;
+    color: $text-color;
     transition: color 0.2s ease-in-out;
     display: inline-block;
 }
@@ -258,15 +281,17 @@ body {
     text-align: left;
     font-size: 3.5rem;
     font-weight: 600;
-    opacity: 0.85;
+    opacity: 1;
+    color: $text-color;
     box-sizing: border-box;
     line-height: 3.2rem;
+    background-color: $background-color;
 }
 
 .home-divider {
     width: 100%;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $text-color;
     margin-top: 1.5rem;
 }
 
@@ -277,8 +302,8 @@ body {
     /* smaller than main description */
     margin-top: 1rem;
     margin-bottom: 0;
-    /* spacing after the divider */
-    opacity: 0.85;
+    color: $text-color
+        /* spacing after the divider */
 }
 
 .home-hero {
@@ -323,16 +348,15 @@ body {
 }
 
 .home-content-box {
-    background: rgba(255, 255, 255, 0.5);
+    background-color: rgba($background-color, 0.5);
     max-width: 900px;
     width: 80%;
-    padding: 1rem;
+    padding: 1.5rem;
+    padding-top: 4rem;
 
     border-radius: 2px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /**
 * About and CV
@@ -346,6 +370,7 @@ body {
     width: 85vw;
     margin: 0 auto;
     /* keep centered */
+    color: $text-color;
 }
 
 .wrapper {
@@ -359,6 +384,7 @@ body {
     width: 320px;
     /* slightly wider if desired */
     max-width: 100%;
+    margin-top: 2.5vw;
 }
 
 /**
@@ -381,12 +407,12 @@ body {
 .about-title {
     position: absolute;
     top: 8%;
-    left: 40%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     text-transform: uppercase;
-    opacity: 0.85;
+    opacity: 0.9;
     pointer-events: none;
     z-index: 1;
 }
@@ -402,11 +428,11 @@ body {
 
 .about-text {
     flex: 1;
-    margin-top: 10rem;
+    margin-top: 12rem;
     column-count: 2;
     column-gap: 2rem;
     max-width: 60%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 /* ----- Responsive Styles ----- */
@@ -460,22 +486,25 @@ body {
     /* needed for absolute title */
     overflow: hidden;
     box-sizing: border-box;
+    margin-top: 1.5rem;
 }
 
 /* CV Title */
 .cv-title {
     position: absolute;
-    top: 3%;
+    top: 3.5%;
     /* ~50% overlap with image */
-    left: 43%;
+    left: 28%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
     opacity: 0.85;
     pointer-events: none;
     z-index: 1;
     text-align: right;
+    max-width: 600px;
+    line-height: 3.2rem;
 }
 
 .cv-image img.profile-photo {
@@ -484,7 +513,7 @@ body {
     height: auto;
     object-fit: cover;
     display: block;
-    margin-top: 5rem;
+    // margin-top: 5rem;
     margin-left: 0;
     /* touch left edge */
     border-radius: 0;
@@ -498,6 +527,7 @@ body {
     /* two-column text */
     column-gap: 2rem;
     max-width: 60%;
+    color: $text-color;
 }
 
 /* Responsive styles */
@@ -527,6 +557,7 @@ body {
         column-count: 1;
         /* single column on mobile */
         max-width: 90%;
+        color: $text-color;
     }
 }
 
@@ -548,7 +579,7 @@ body {
 
 .cv-section h2 {
     margin-bottom: 0.4rem;
-    color: #444;
+    color: $text-color;
     font-size: 1.1rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -562,23 +593,24 @@ body {
     white-space: nowrap;
     font-size: 0.80rem;
     font-weight: 400;
-    color: #777;
+    color: rgba($text-color, 0.7);
 }
 
 .cv-subheader {
     font-size: 0.8rem;
-    color: #555;
+    color: $text-color;
     font-style: italic;
 }
 
 .cv-small {
     font-size: 0.8rem;
-    color: #666;
+    color: rgba($text-color, 0.7);
     margin-top: 0.3rem;
+    max-width: 80%;
 }
 
 .cv-small li {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
 }
 
 .cv-small ul {
@@ -592,6 +624,7 @@ body {
 
 .cv-section .cv-tight strong {
     font-size: 0.92em;
+    color: $text-color;
 }
 
 .cv-link,
@@ -609,7 +642,7 @@ body {
 }
 
 .cv-link:hover {
-    color: #444;
+    color: $hover-color;
     /* subtle darkening */
     transform: scale(1.01);
     /* very gentle */
