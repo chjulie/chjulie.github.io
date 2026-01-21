@@ -1,6 +1,6 @@
 ---
-title:  "A recurrent convolutional neural network for coronal jet identification"
-date:   2026-01-05 18:44:09 -0800
+title:  "A Recurrent Convolutional Neural Network for Coronal Jet Identification"
+date:   2025-11-20 18:44:09 -0800
 categories: projects
 permalink: :categories/rcnn-solar-jets.html
 hero_image: assets/images/2026-01-05-cover.png
