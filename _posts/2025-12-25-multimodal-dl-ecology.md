@@ -10,7 +10,7 @@ In the context of multi-modal deep learning, this project assessed the improveme
 
 
 <figure id="fig-structure" style="text-align: center; max-width: 90%; margin: 2em auto;">
-  <img src="/assets/images/2025-12-20-model_structure_final.svg" alt="Overall method structure">
+  <img src="/assets/images/2025-12-20-model_structure_final.png" alt="Overall method structure">
   <figcaption style="margin-top: 0.5em; font-size: 0.9em;">
     <strong>Figure 1.</strong> Overall method structure.
   </figcaption>
@@ -19,7 +19,7 @@ In the context of multi-modal deep learning, this project assessed the improveme
 Data input and output of model
 The Geoplant dataset consists of Presence-Absence survey data of plants in Europe, collected by biologists for small observation plots. For each given spatial plot (considered as a point) and survey date, diverse environmental features are provided. They include bioclimatic, soil, elevation, land-cover and human footprints variables, which make up the tabular data. Additionally, for each spatial plot, climatic and satellite 18 years long time series data is available. The time series give insight on the climate and past events that have influenced plant growth, which are absent from the « instantaneous » tabular data. The climatic time series have a monthly resolution and four channels : average precipitation and monthly minimum, maximum and mean temperatures. The satellite time series have a trimestrial resolution and six channels : Red, Green, Blue, near-infrared (NIR) and short-wave infrared 1 and 2 (SWIR1, SWIR2). The model is trained to predict species occurence probability, given the geographical coordinates, the environmental features and the time series features.
 
-A constraint of the time series tokenization method was the preservation of independant weights for each channel. This point was crucial for the evaluation of model performance by selecting specific features during testing and assessing their influence on overall performance, which is possible following the MaskSDM approach presented in CITE. Furthermore, the satellite and climatic time series differ in length, necessitating that the tokenization method accommodates variations in input lengths seamlessly. To address these constraints, four architectures are proposed for tokenizing the time series.
+A constraint of the time series tokenization method was the preservation of independant weights for each channel. This point was crucial for the evaluation of model performance by selecting specific features during testing and assessing their influence on overall performance, which is possible following the MaskSDM approach presented in [^1]. Furthermore, the satellite and climatic time series differ in length, necessitating that the tokenization method accommodates variations in input lengths seamlessly. To address these constraints, four architectures are proposed for tokenizing the time series.
 1. **Multilayer Perceptron** (MLP) : In MLPs, each internal node attends to all input entries. Even if this model does not account for the temporal structure of the data, the rational for employing it lies in the hypothesis that it may implicitly learn to capture temporal dependencies.
 2. **Fully Convolutional Network** (FCN) : Convolutions are known for their ability to exploit spatial correlations in two-dimensional image data. For one-dimensional time series data, the hypothesis is that convolutions with an appropriately defined receptive field can effectively capture meaningful attributes, such as seasonal variations.
 3. **Residual Network** (ResNet) : Residual networks utilize residual connections to create shortcuts within each block of CNNs. This capability to capture complex long-term dependencies motivates the use of residual networks for representing temporal dependencies in time series data.
@@ -32,7 +32,7 @@ Secondly, to assess the contribution of each time series to the model’s perfor
 [Figure 2](#fig-occurence) visualizes the differences in model predictions for a specific species under three scenarios: (a) using only tabular data, (b) using tabular data and satellite time series, and (c) using tabular data and climatic time series. Panel (d) provides a comparison with the actual distribution of the species.
 
 <figure id="fig-occurence" style="text-align: center; max-width: 70%; margin: 2em auto;">
-  <img src="/assets/images/2025-12-20-occurence.svg" alt="Occurence prediction maps">
+  <img src="/assets/images/2025-12-20-occurence.png" alt="Occurence prediction maps">
   <figcaption style="margin-top: 0.5em; font-size: 0.9em;">
     <strong>Figure 2.</strong> Occurence prediction for specie n° 9028 based on (a) tabular features, (b) tabular
 features and satellite time series, (c) tabular features and climatic time series and (d) the true
@@ -44,3 +44,7 @@ The performed experiments demonstrated the valuable addition of information by t
 captures a large context size while preserving the temporal structure of the input data through the addition of positional encodings.
 
 This project was an opportunity to reflect on the relationship between data structure and the choice of an appropriate model for extracting meaningful information. From a programming perspective, it also helped me gain confidence in implementing different models in PyTorch, including building a transformer encoder from scratch to preserve channel independence.
+
+Download my [project report]( /assets/pdfs/eceo-report.pdf ).
+
+[^1]: Zbinden, R., Tiel, N.v., Sumbul, G., Kellenberger, B., Tuia, D. (2025). MaskSDM: Adaptive Species Distribution Modeling Through Data Masking. In: Del Bue, A., Canton, C., Pont-Tuset, J., Tommasi, T. (eds) Computer Vision – ECCV 2024 Workshops. ECCV 2024. Lecture Notes in Computer Science, vol 15624. Springer, Cham. https://doi.org/10.1007/978-3-031-92387-6_14

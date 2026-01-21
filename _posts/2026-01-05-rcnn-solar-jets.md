@@ -39,4 +39,6 @@ To evaluate the generalization performance of our model, we used the test, which
 
 Our project introduced a Recurrent Convolutional Neural Network (RCNN) for identifying solar jets using high-resolution Solar Dynamic Observatory (SDO) data. It provides a fast and reliable alternative to the current manual classification method by citizen science, and will be used to automate the processing of the ever-increasing amount of data in the Heliophysics events knowledgebase. Not only this project had a positive impact on this research field, it also allowed our young team of three student to design and train a neural network from scratch. The reflexions behind the design choices and the hyperparameter tuning was a valuable learning experience. It taught us to think about the structure of underlying data and the objective at hand, while not losing sight of the theory and rigour thaught in the course.
 
+Download our [project report]( /assets/pdfs/CS433-report.pdf ).
+
 [^1]: Armstrong, J.A., Fletcher, L. Fast Solar Image Classification Using Deep Learning and Its Importance for Automation in Solar Physics. Sol Phys 294, 80 (2019). https://doi.org/10.1007/s11207-019-1473-z

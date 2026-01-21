@@ -53,7 +53,7 @@ layout: base
     </div>
     <ul class="cv-small">
       <li>Fine-tuning and evaluation of a regional data-driven limited-area model for British Columbia.</li>
-      <li>Implementation using the open-source <em>Anemoi</em> library.</li>
+      <li>Implementation using the open-source <em>Anemoi</em> library</li>
       <li>Development of an evaluation pipeline based on surface observations and reanalysis data.</li>
     </ul>
   </div>
@@ -67,8 +67,8 @@ layout: base
       <em><a href="https://www.epfl.ch/labs/eceo/fr/home-fr/" class="cv-link">Environmental Computational Science and Earth Observation Laboratory, EPFL</a></em>
     </div>
     <ul class="cv-small">
-      <li>Implementation of 4 deep learning models (MLP, FCN, ResNet, Transformer Encoder).</li>
-      <li>Quantification of performance improvement from time series inputs and model comparison.</li>
+      <li>Implementation of 4 deep learning models (MLP, FCN, ResNet, Transformer Encoder)</li>
+      <li>Quantification of performance improvement from time series inputs and model comparison</li>
     </ul>
   </div>
 </section>
@@ -78,8 +78,8 @@ layout: base
   <h2>Skills</h2>
 
   <p class="cv-tight">
-    <strong>Programming Languages</strong>
-    <span class="cv-small">Python (PyTorch, SciPy, Pandas, Scikit-learn), Matlab, C/C++</span>
+    <strong>Programming</strong>
+    <span class="cv-small">Python (PyTorch, SciPy, Pandas, Scikit-learn), MPI and slurm, Matlab, C/C++, SQL</span>
   </p>
 
   <p class="cv-tight">
@@ -107,9 +107,9 @@ layout: base
       <span class="cv-right">Lausanne</span>
     </div>
     <ul class="cv-small">
-      <li>Development of a data analysis and visualization pipeline for high-frequency hydraulic Pelton turbine vibration data.</li>
-      <li>Implementation of turbine health monitoring metrics.</li>
-      <li>Creation of a Python library for automated analysis and visualization.</li>
+      <li>Development of a data analysis and visualization pipeline for high-frequency hydraulic Pelton turbine vibration data</li>
+      <li>Implementation of turbine health monitoring metrics</li>
+      <li>Creation of a Python library for automated analysis and visualization</li>
     </ul>
   </div>
 
@@ -123,7 +123,7 @@ layout: base
       <span class="cv-right">Lausanne</span>
     </div>
     <p class="cv-small">
-      Probability and Statistics, Estimation Methods, Informatique, Calcul et Communication (Python).
+      For the classe <it>Probability and Statistics</it>, <it>Estimation Methods</it>, <it>Informatique, Calcul et Communication (Python)</it>
     </p>
   </div>
 </section>
@@ -142,7 +142,7 @@ layout: base
       <span class="cv-right">Lausanne</span>
     </div>
     <p class="cv-small">
-      Community management and content creation for Instagram and LinkedIn.
+      Community management and content creation for Instagram and LinkedIn
     </p>
   </div>
 
@@ -156,7 +156,7 @@ layout: base
       <span class="cv-right">Lausanne</span>
     </div>
     <p class="cv-small">
-      Management of 10 coaches and 50 gymnasts (6–15), training planning and event organisation.
+      Management of 10 coaches and 50 gymnasts (6–15), training planning and organisation of regular intra-club events
     </p>
   </div>
 </section>
@@ -186,7 +186,7 @@ layout: base
 
   <p class="cv-tight">
     <strong>Gymnastics</strong>
-    <span class="cv-small">Individual and group competition at national level, regular coaching. J+S certification (2023)</span>
+    <span class="cv-small">Individual and group competition at national level, regular coaching and volunteering. J+S certification (2023)</span>
   </p>
 </section>
 
