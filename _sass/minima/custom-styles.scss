@@ -93,6 +93,10 @@ body {
     padding: 0;
 }
 
+p {
+    text-align: justify;
+}
+
 .header-inner {
     width: 90vw;
     /* 90% of viewport width */
@@ -432,7 +436,7 @@ ul.post-list li h3 a.post-link:hover {
     max-width: 900px;
     width: 80%;
     padding: 1.5rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 
     border-radius: 2px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
