@@ -11,11 +11,11 @@ layout: base
 
   <div class="about-text">
     <p>
-      Hi, I'm Julie - a MSc student in Computational Sciences and Engineering at the École Polytechnique Fédérale de Lausanne. I am passionate about AI and its application to engineering and environmental challenges. Outside of academia, I love going on adventures, either on foot, skis or on a bicycle. 
+      Hi, I'm Julie - a MSc student in Computational Sciences and Engineering at the École Polytechnique Fédérale de Lausanne. I am passionate about AI and its application to engineering challenges. Outside of academia, I love going on adventures, either on foot, skis or on a bicycle. 
     </p>
 
     <p>   
-      My passion for the outdoors originally led me through a BSc in Environmental Sciences and Engineering at EPFL. I had the opportunity to spend my third and last year at ETHZ, which I used to perfect my german and explore classes related to the energy industry. Furthermore, I recognize the growing importance of statistical and data analysis. Following that realisation, I pursued a MSc in Computational Sciences and Engineering with the desire to develop rigorous mathematical modelling tools and to improve my programming skills. 
+      My passion for the outdoors originally led me through a BSc in Environmental Sciences and Engineering at EPFL. I had the opportunity to spend my third and last year at ETHZ, which I used to perfect my german and explore classes related to the energy industry. Recognizing the growing importance of statistical and data analysis, I pursued a MSc in Computational Sciences and Engineering with the desire to develop rigorous mathematical modelling tools and to improve my programming skills. 
     </p>
 
     <p>   
