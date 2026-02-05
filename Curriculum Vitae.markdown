@@ -61,9 +61,9 @@ layout: base
         <em><a href="https://wfrt.eoas.ubc.ca/" class="cv-link">Weather Forecast Research Team, University of British Columbia</a></em>
       </div>
       <ul class="cv-small">
-        <li>Fine-tuning and evaluation of a regional data-driven limited-area model for British Columbia.</li>
+        <li>Fine-tuning and evaluation of a regional data-driven limited-area model for British Columbia</li>
         <li>Implementation using the open-source <em>Anemoi</em> library</li>
-        <li>Development of an evaluation pipeline based on surface observations and reanalysis data.</li>
+        <li>Development of an evaluation pipeline based on surface observations and reanalysis data</li>
       </ul>
     </div>
 
